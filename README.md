@@ -1,0 +1,2 @@
+# tamanepedia
+Wikipedia Viewer
