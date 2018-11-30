@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/***** RESET *****/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;	padding: 0;	border: 0;	font-size: 100%; font: inherit;	vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+/***** END RESET *****/
+
+body {
+	background: #7177f9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #8bb4fe, #fd65a7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #8bb4fe, #fd65a7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #8bb4fe, #fd65a7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #8bb4fe, #fd65a7); /* Standard syntax */ 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size:  cover;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Quicksand', sans-serif; }
+h1 { font-size: 2em; }
+
+.wrap { margin: 0 auto;}
+
+.container{
+	background: #3e4b71; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #4d5d90, #1c2237); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #4d5d90, #1c2237); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #4d5d90, #1c2237); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #4d5d90, #1c2237); /* Standard syntax */ 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size:  cover;
+	font-family: 'Source Serif Pro', serif;
+	border-radius: 8px;
+	color: #FFF;
+	text-align: center;
+	width: 800px;
+	margin: 25px auto;
+	padding: 10px;
+}
+
+header { margin: 20px 0; }
+header img{ margin: 0 auto 25px; }
+header h1{ margin: 0 auto; }
+
+.search_bar_wrap { 
+	clear: both; 
+	width: 100%; 
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+#search_button { float: left; width: 100%; }
+#input { 
+	width: 62%; 
+	font-size: 18px; 
+	margin: 0 10px 0 5px; 
+	border-radius: 10px; 
+	float: left; 
+	border: 0 none;
+	padding: 8px 12px;
+	font-family: 'Source Serif Pro', serif;
+}
+#input_search, #random_button {
+	background: #7177f9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #848af4, #c148ec, #f060bd); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #848af4, #c148ec, #f060bd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #848af4, #c148ec, #f060bd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #848af4, #c148ec, #f060bd); /* Standard syntax */ 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size:  cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+	font-size: 12px;
+    width: 15%;
+    margin: 0 5px;
+    color: #fff;
+    border: 0 none;
+    border-radius: 5px;
+    height: 37px;
+	float: left;
+	cursor: pointer;
+}
+
+#input_search:hover, #random_button:hover{
+	border: 1px inset #fff;
+}
+
+#ui-id-1{
+	background-color: #fff;
+	width: 520px !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ui-menu-item{
+	padding: 5px 10px;
+	font-family: 'Quicksand', sans-serif;
+	width: 500px;
+}
+
+.ui-menu-item:hover{
+	background-color: #EEE;
+	cursor: pointer;
+}
+
+#results_container{ display: none; }
+
+.results_container { 
+	clear: both;
+    width: 100%;
+    margin-bottom: 30px;
+	display: inline-block;
+}
+
+#user_input_text{
+	font-weight: bold;
+	font-style: italic;
+}
+
+#result{
+	margin: 20px 0;
+}
+
+#result li a:link{
+	text-decoration: none;
+    color: #fff;
+    float: left;
+    width: 725px;
+    margin: 3px;
+    background-color: #272f4b;
+    font-size: 20px;
+    text-align: left;
+    padding: 25px;
+    border-radius: 0 10px 10px 0;
+    border-left: 5px solid yellow;
+}
+
+#result li a:visited{ color: #aaa; }
+
+#result li a:hover { background-color: #38446a; border-left: 5px solid #aaa; }
+
+.ui-helper-hidden-accessible{display: none;}
+
+footer { 
+	font-family: 'Source Serif Pro', serif; 
+	margin: 0 auto; 
+	text-align: center; 
+	color: #fff; 
+	clear: both; 
+	background: url(http://atamane.eu5.org/free-code-camp/wikipedia/footer-bg.png) no-repeat center bottom;
+	height: 400px;
+}
